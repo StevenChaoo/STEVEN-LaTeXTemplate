@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2021.1.18)  19 JAN 2021 22:50
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2021.1.18)  19 JAN 2021 23:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/steven/Desktop/LaTeX Temple/ChineseOneColunm"
-(/Users/steven/Desktop/LaTeX Temple/ChineseOneColunm.tex
+**/Users/steven/File/Code/LaTeXTemplate/Chinese/ChineseOneColunm
+(/Users/steven/File/Code/LaTeXTemplate/Chinese/ChineseOneColunm.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-03-06> (/usr/local/texlive/2020/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
@@ -468,15 +468,15 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 File: 图片.jpeg Graphic file (type bmp)
 <图片.jpeg>
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 81.
+(Font)              <12> on input line 80.
  [1] (./ChineseOneColunm.aux) ) 
 Here is how much of TeX's memory you used:
- 7735 strings out of 479418
- 209919 string characters out of 5884585
- 493670 words of memory out of 5000000
- 25125 multiletter control sequences out of 15000+600000
+ 7734 strings out of 479418
+ 209944 string characters out of 5884585
+ 493662 words of memory out of 5000000
+ 25124 multiletter control sequences out of 15000+600000
  537350 words of font info for 83 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 58i,10n,81p,461b,482s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 58i,10n,81p,470b,482s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on ChineseOneColunm.pdf (3 pages).
