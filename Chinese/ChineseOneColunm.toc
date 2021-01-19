@@ -1,0 +1,13 @@
+\ttl@change@i {\@ne }{section}{20pt}{\vspace {1mm}\bfseries \songti \zihao {-4}}{\contentslabel {25pt}}{\hspace *{-25pt}}{\titlerule *[5pt]{.}\contentspage }\relax 
+\ttl@change@v {section}{}{}{}\relax 
+\ttl@change@i {\@ne }{subsection}{50pt}{\vspace {1mm}\songti \zihao {-4}}{\contentslabel {30pt}}{\hspace *{-30pt}}{\titlerule *[5pt]{.}\contentspage }\relax 
+\ttl@change@v {subsection}{}{}{}\relax 
+\ttl@change@i {\@ne }{subsubsection}{80pt}{\vspace {1mm}\songti \zihao {-4}}{\contentslabel {40pt}}{\hspace *{-40pt}}{\titlerule *[5pt]{.}\contentspage }\relax 
+\ttl@change@v {subsubsection}{}{}{}\relax 
+\contentsline {section}{\numberline {1}\songti \zihao {-4}第一部分}{1}%
+\contentsline {section}{\numberline {2}\songti \zihao {-4}第二部分}{1}%
+\contentsline {subsection}{\numberline {2.1}\songti \zihao {-4}第二部分第一小节}{1}%
+\contentsline {subsubsection}{\numberline {2.1.1}\songti \zihao {-4}第二部分第一小节第一分节}{1}%
+\contentsline {section}{\numberline {3}\songti \zihao {-4}第三部分}{1}%
+\contentsline {paragraph}{\songti \zihao {-4}详例}{1}%
+\contentsfinish 
