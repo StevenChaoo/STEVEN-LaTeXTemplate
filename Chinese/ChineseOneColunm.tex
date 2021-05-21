@@ -1,30 +1,80 @@
 \documentclass[12pt]{article}
-\usepackage{ctex}
+% ----------------------------------------Packages begin
 \usepackage[a4paper,left=25mm,right=25mm,top=25mm,bottom=25mm]{geometry}  
-\usepackage{url}
-\usepackage{graphicx}
-\usepackage{float}
-\usepackage{titletoc}
-\usepackage{fancyhdr}
-
-
+\usepackage{ctex}        % 中文库
+\usepackage{titletoc}    % 目录库
+\usepackage{fancyhdr}    % 页眉库
+\usepackage{url}         % 链接库
+\usepackage{graphicx}    % 图片库
+\usepackage{float}       % 数学库
+\usepackage{amsmath}     % 复杂数学库
+\usepackage{amssymb}     % 花体字符库
+\usepackage{algorithm}   % 算法流程图库
+\usepackage{algorithmic} % 算法流程图库
+\usepackage{listings}    % 代码块库
+\usepackage{xcolor}      % 代码块颜色库
+% ----------------------------------------Packages end
+% ----------------------------------------Algorithm Graphy begin
+\renewcommand{\algorithmicrequire}{ \textbf{Input:}}
+\renewcommand{\algorithmicensure}{ \textbf{Output:}}
+% ----------------------------------------Algorithm Graph end
+% ----------------------------------------Code Block begin
+\lstset{
+    basicstyle          =   \sffamily,          % 基本代码风格
+    keywordstyle        =   \bfseries,          % 关键字风格
+    commentstyle        =   \rmfamily\itshape,  % 注释的风格，斜体
+    stringstyle         =   \ttfamily,          % 字符串风格
+    flexiblecolumns,                            % 别问为什么，加上这个
+    numbers             =   left,               % 行号的位置在左边
+    showspaces          =   false,              % 是否显示空格，显示了有点乱，所以不现实了
+    numberstyle         =   \zihao{-5}\ttfamily,% 行号的样式，小五号，tt等宽字体
+    showstringspaces    =   false,
+    captionpos          =   t,                  % 这段代码的名字所呈现的位置，t指的是top上面
+    frame               =   lrtb,               % 显示边框
+}
+\lstdefinestyle{Python}{
+    language        =   Python,                 % 语言选Python
+    basicstyle      =   \zihao{-5}\ttfamily,
+    numberstyle     =   \zihao{-5}\ttfamily,
+    keywordstyle    =   \color{blue},
+    keywordstyle    =   [2] \color{teal},
+    stringstyle     =   \color{magenta},
+    commentstyle    =   \color{red}\ttfamily,
+    breaklines      =   true,                   % 自动换行，建议不要写太长的行
+    columns         =   fixed,                  % 如果不加这一句，字间距就不固定，很丑，必须加
+    basewidth       =   0.5em,
+}
+\lstdefinestyle{C++}{
+    language        =   C++,                    % 语言选C++
+    basicstyle      =   \zihao{-5}\ttfamily,
+    numberstyle     =   \zihao{-5}\ttfamily,
+    keywordstyle    =   \color{blue},
+    keywordstyle    =   [2] \color{teal},
+    stringstyle     =   \color{magenta},
+    commentstyle    =   \color{red}\ttfamily,
+    breaklines      =   true,                   % 自动换行，建议不要写太长的行
+    columns         =   fixed,                  % 如果不加这一句，字间距就不固定，很丑，必须加
+    basewidth       =   0.5em,
+}
+% ----------------------------------------Code Block end
+% ----------------------------------------Document begin
 \begin{document}
-% ----------------------------------------Linespread begin
+% Linespread begin
 \linespread{1.5}
-% ----------------------------------------Linespread end
-% ----------------------------------------Head begin
+% Linespread end
+% Head begin
 \pagestyle{fancy}
 \fancyhead[C]{文章题目}
 \fancyhead[L, R]{}
-% ----------------------------------------Head end
-% ----------------------------------------Title begin
+% Head end
+% Title begin
 \pagenumbering{Roman}
 \title{\songti \zihao{2} \textbf{题目}}
 \author{\fangsong \zihao{-3}作者1 \quad 作者2}
 \date{}
 \maketitle
-% ----------------------------------------Title end
-% ----------------------------------------Abstract begin
+% Title end
+% Abstract begin
 \ctexset{abstractname = {\zihao{-4}摘要}}
 \begin{abstract}
     \zihao{-4}\fangsong 中文摘要\\
@@ -35,8 +85,8 @@
     \zihao{-4} 英文摘要 \\
     \zihao{-4} \textbf{\heiti Keywords：}英文关键词1;英文关键词2
 \end{abstract}
-% ----------------------------------------Abstract end
-% ----------------------------------------Contents begin
+% Abstract end
+% Contents begin
 \newpage
 \tableofcontents
 \contentsmargin{0pt}
@@ -44,8 +94,8 @@
 \dottedcontents{section}[20pt]{\vspace{1mm}\bfseries\songti\zihao{-4}}{25pt}{5pt}
 \dottedcontents{subsection}[50pt]{\vspace{1mm}\songti\zihao{-4}}{30pt}{5pt}
 \dottedcontents{subsubsection}[80pt]{\vspace{1mm}\songti\zihao{-4}}{40pt}{5pt}
-% ----------------------------------------Contents end
-% ----------------------------------------Article begin
+% Contents end
+% Article begin
 \newpage
 \pagenumbering{arabic}
 \section{\songti\zihao{-4}第一部分}
@@ -54,18 +104,23 @@
 \subsubsection{\songti\zihao{-4}第二部分第一小节第一分节}
 \section{\songti\zihao{-4}第三部分}
 \paragraph{\songti\zihao{-4}详例}
-
+% Article end
+% Equation begin
+\clearpage
 \songti\zihao{-4}在语句内添加公式用$a^2=b^2+c^2$来表示
-
 \songti\zihao{-4}在语段间添加公式用$$a^2=b^2+c^2$$来表示
-
+% Equation end
+% Items begin
+\clearpage
 \songti\zihao{-4}分点可以用以下代码表示：
 \begin{enumerate}
     \songti\zihao{-4}\item xxx
     \songti\zihao{-4}\item xxx
     \songti\zihao{-4}\item xxx
 \end{enumerate}
-
+% Items end
+% Figure begin
+\clearpage
 \songti\zihao{-4}展示图片可以用如图1来表示：
 \begin{figure}[H]
     \label{fig:图片}
@@ -73,7 +128,9 @@
     \includegraphics[scale=0.5,trim=150 220 150 220,clip]{图片.jpeg}
     \caption{\fangsong 这是一张图片}
 \end{figure}
-
+% Figure end
+% Table begin
+\clearpage
 \songti\zihao{-4}展示表格可以用如表1来表示：
 \begin{table}[H]
     \centering
@@ -86,5 +143,144 @@
     \end{tabular}
     \caption{\fangsong 这是一个表格}
 \end{table}
-% ----------------------------------------Article end
+% Table end
+% Algorithm Graph begin
+\clearpage
+\begin{algorithm}[htb]
+    \caption{ Framework of ensemble learning for our system.}
+    \label{alg:Framwork}
+    \begin{algorithmic}[1] %这个1 表示每一行都显示数字
+    \REQUIRE ~~\\ %算法的输入参数：Input
+        The set of positive samples for current batch, $P_n$;\\
+        The set of unlabelled samples for current batch, $U_n$;\\
+        Ensemble of classifiers on former batches, $E_{n-1}$;
+    \ENSURE ~~\\ %算法的输出：Output
+        Ensemble of classifiers on the current batch, $E_n$;
+        \STATE Extracting the set of reliable negative and/or positive samples $T_n$ from $U_n$ with help of $P_n$;
+        \STATE Training ensemble of classifiers $E$ on $T_n \cup P_n$, with help of data in former batches;
+        \STATE $E_n=E_{n-1}\cup E$;
+        \STATE Classifying samples in $U_n-T_n$ by $E_n$;
+        \STATE Deleting some weak classifiers in $E_n$ so as to keep the capacity of $E_n$;
+    \RETURN $E_n$; %算法的返回值
+    \end{algorithmic}
+\end{algorithm}
+\begin{algorithm}
+    \caption{An example}
+    \label{alg:2}
+    \begin{algorithmic}
+        \STATE {set $r(t)=x(t)$}
+        \REPEAT
+        \STATE set $h(t)=r(t)$
+        \REPEAT
+        \STATE set $h(t)=r(t)$
+        \UNTIL{B}
+        \UNTIL{B}
+    \end{algorithmic}
+\end{algorithm}
+\begin{algorithm}
+    \caption{Calculate $y = x^n$}
+    \label{alg:3}
+    \begin{algorithmic}
+        \REQUIRE $n \geq 0 \vee x \neq 0$
+        \ENSURE $y = x^n$
+        \STATE $y \Leftarrow 1$
+    \IF{$n < 0$}
+        \STATE $X \Leftarrow 1 / x$
+        \STATE $N \Leftarrow -n$
+    \ELSE
+        \STATE $X \Leftarrow x$
+        \STATE $N \Leftarrow n$
+    \ENDIF
+    \WHILE{$N \neq 0$}
+        \IF{$N$ is even}
+            \STATE $X \Leftarrow X \times X$
+            \STATE $N \Leftarrow N / 2$
+        \ELSE[$N$ is odd]
+            \STATE $y \Leftarrow y \times X$
+            \STATE $N \Leftarrow N - 1$
+        \ENDIF
+    \ENDWHILE
+    \end{algorithmic}
+\end{algorithm}
+\begin{algorithm}[h]
+    \caption{An example for format For \& While Loop in Algorithm}
+    \label{alg:4}
+    \begin{algorithmic}[1]
+        \FOR{each $i \in [1,9]$}
+            \STATE initialize a tree $T_{i}$ with only a leaf (the root);\
+            \STATE $T=T \cup T_{i};$\
+        \ENDFOR
+        \FORALL {$c$ such that $c \in RecentMBatch(E_{n-1})$}
+            \STATE $T=T \cup PosSample(c)$;
+        \ENDFOR
+        \FOR{$i=1$; $i<n$; $i++$ }
+            \STATE $//$ Your source here;
+        \ENDFOR
+        \FOR{$i=1$ to $n$}
+            \STATE $//$ Your source here;
+        \ENDFOR
+            \STATE $//$ Reusing recent base classifiers.
+        \WHILE {$(|E_n| \leq L_1 )and( D \neq \phi)$}
+            \STATE Selecting the most recent classifier $c_i$ from $D$;
+            \STATE $D=D-c_i$;
+            \STATE $E_n=E_n+c_i$;
+        \ENDWHILE
+    \end{algorithmic}
+\end{algorithm}
+% Algotirhm Graph end
+% Math begin
+\clearpage
+\begin{gather}%会产生编号
+	a+b=b+a\\
+	ab=ba
+\end{gather}
+\begin{gather*}%不会产生编号
+a \times b=b \times a\\
+ab=ba   
+\end{gather*}
+\begin{gather}%会编号
+a+b=b+a \notag \\%\notag阻止编号
+ab=ba   \notag %\notag阻止编号
+\end{gather}
+\begin{align}
+	x &= t + \cos t + 1\\
+	y &= 2\sin t
+\end{align}
+\begin{equation}
+	\begin{split}
+	\cos 2x &= \cos^2 x - \sin^2 x\\
+	&= 2\cos^2 x - 1
+	\end{split}
+\end{equation}
+\begin{equation}
+	D(x) = \begin{cases}
+	1, &\text{如果} x \in \mathbb{Q}\\%mathbb花体字符
+	0, &\text{如果} x \in \mathbb{R}\setminus\mathbb{Q}	
+		   \end{cases}%\text是为了在数学公式中处理中文
+\end{equation}
+% Math end
+% Code Block start
+\clearpage
+\lstinputlisting[
+    style       =   Python,
+    caption     =   {\bf test.py},
+    label       =   {test.py}
+]{test.py}
+\lstinputlisting[
+    style       =   C++,
+    caption     =   {\bf test.cpp},
+    label       =   {test.cpp}
+]{test.cpp}
+% Code Block end
+% Conferences begin
+\clearpage
+参考文献这样使用\cite{ref2}
+\begin{thebibliography}{99}  
+    \bibitem{ref1}Zheng L, Wang S, Tian L, et al., Query-adaptive late fusion for image search and person re-identification, Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, 2015: 1741-1750.  
+    \bibitem{ref2}Arandjelović R, Zisserman A, Three things everyone should know to improve object retrieval, Computer Vision and Pattern Recognition (CVPR), 2012 IEEE Conference on, IEEE, 2012: 2911-2918.  
+    \bibitem{ref3}Lowe D G. Distinctive image features from scale-invariant keypoints, International journal of computer vision, 2004, 60(2): 91-110.  
+    \bibitem{ref4}Philbin J, Chum O, Isard M, et al. Lost in quantization: Improving particular object retrieval in large scale image databases, Computer Vision and Pattern Recognition, 2008. CVPR 2008, IEEE Conference on, IEEE, 2008: 1-8.  
+\end{thebibliography}
+% Conferences end
 \end{document}
+% ----------------------------------------Document end
